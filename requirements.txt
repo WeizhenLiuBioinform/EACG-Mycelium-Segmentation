@@ -1,0 +1,13 @@
+# Install a CUDA-compatible PyTorch/MMCV stack on the target server first.
+# Dependencies for the MMSegmentation 1.2.2 integration.
+mmsegmentation==1.2.2
+torch>=1.8
+mmcv>=2.0.0,<2.2.0
+mmengine>=0.10.3,<1.0.0
+numpy>=1.23,<2
+scipy>=1.9
+Pillow>=9
+opencv-python>=4.6,<4.12
+# Imported by MMSegmentation's shared tokenizer utilities.
+ftfy>=6.1
+regex

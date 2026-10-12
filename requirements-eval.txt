@@ -1,0 +1,4 @@
+# Extra dependencies for configs/*_boundary.py only.
+MedPy>=0.4
+opencv-python>=4.6,<4.12
+prettytable>=3
