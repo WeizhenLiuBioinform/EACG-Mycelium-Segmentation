@@ -63,7 +63,7 @@ EACG results reported in the paper (mean ± standard deviation over five runs):
 
 ## Dataset
 
-The provided configuration targets **MyceliumSeg**[[Paper]](https://doi.org/10.1038/s41597-025-06265-1)|[[Dataset]](https://doi.org/10.5281/zenodo.15224240), which contains 507 images from four fungal species at a resolution of 4608 × 3456. The paper uses 412 images for training, 45 for validation, and 50 for testing. It also evaluates EACG on GWFSS, PhenoBench, and PMD2023.
+The provided configuration targets **MyceliumSeg**[[Paper]](https://doi.org/10.1038/s41597-025-06265-1)|[[Dataset]](https://doi.org/10.5281/zenodo.15224240)|[[Github]](https://github.com/WeizhenLiuBioinform/MyceliumSeg), which contains 507 images from four fungal species at a resolution of 4608 × 3456. The paper uses 412 images for training, 45 for validation, and 50 for testing. It also evaluates EACG on GWFSS, PhenoBench, and PMD2023.
 
 Prepare the dataset separately and set `EACG_DATA_ROOT` (default: `data/MyceliumSeg`). Each split (`train`, `val`, `test`) contains `image/` and `mask/` directories with matching `.jpg` images and `.png` masks. Mask labels are `0` for background, `1` for mycelium, and `255` for ignored pixels. Dataset settings are in [configs/_base_/mycelium.py](configs/_base_/mycelium.py).
 
